@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BootStrap Theme</title>
+</head>
+
+<body class="bg-dark">
+    <header class="bg-light text-dark text-center p-3 mb-5">
+        <h2>Fastest Finger</h2>
+    </header>
+
+    <div class="container text-center text-light">
+        <div class="row mb-5">
+            <!-- word input -->
+            <div class="col-sm-6 mx-auto">
+                <h4>Type the given word within <span class="text-light badge badge-success" id="seconds">5</span>
+                    seconds</h4>
+                <div class="bg-light text-dark rounded">
+                    <h1 class="display-2 p-3 my-5" id="current-word">Hello</h1>
+                </div>
+                <input type="text" id="word-input" class="form-control form-control-lg mt-5" placeholder="Start Typing here..."
+                    autofocus>
+                <div class="col-md-12 py-2">
+                    <h3><span id="message"></span></h3>
+                </div>
+
+
+
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <h3>Time Left: <span id="time">0</span></h3>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>Score: <span id="score">0</span></h3>
+                    </div>
+
+                    <div class="col-md-6 mx-auto">
+                        <div class="form-group">
+                            <label for="gameLevel">Select Level</label>
+                            <select onchange="levelChange()" class="form-control" id="gameLevel">
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <div class="card card-body bg-secondary text-white">
+                            <h5>Instructions</h5>
+                            <p>Type each word in the given amound of seconds to score. To play again, just type the
+                                current word. Your score will reset.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
